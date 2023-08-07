@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Agrega esto en el <head> de tu archivo HTML -->
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Lista de Compras</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Lista de Compras</h1>
+		<input type="text" id="item" placeholder="Agregar un producto">
+		<button onclick="addItem()">Agregar</button>
+		<ul id="lista"></ul>
+	</div>
+	<script type="module">
+	  // Import the functions you need from the SDKs you need
+	  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+	  // TODO: Add SDKs for Firebase products that you want to use
+	  // https://firebase.google.com/docs/web/setup#available-libraries
+
+	  // Your web app's Firebase configuration
+	  const firebaseConfig = {
+		apiKey: "AIzaSyC0mNQEfcjRWqoapET7Q5YTxYKV7KC1vIw",
+		authDomain: "lista-f5437.firebaseapp.com",
+		projectId: "lista-f5437",
+		storageBucket: "lista-f5437.appspot.com",
+		messagingSenderId: "863407330412",
+		appId: "1:863407330412:web:9e5b764dfc653280e0b449"
+	  };
+
+	  // Initialize Firebase
+	  const app = initializeApp(firebaseConfig);
+	</script>
+<script src="script.js"></script>  
+</body>
+</html>
